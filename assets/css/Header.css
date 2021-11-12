@@ -125,3 +125,34 @@ button {
 .dropdown-item {
 }
 
+header.masthead .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 300px) {
+  .searchbar {
+    width: 310px;
+  }
+}
+
+@media (min-width: 300px) {
+  .search_input {
+    width: 245px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 576px) {
+  .searchbar {
+    width: 510px;
+  }
+}
+
+@media (min-width: 576px) {
+  .search_input {
+    width: 450px;
+    font-size: 16px;
+  }
+}
+
