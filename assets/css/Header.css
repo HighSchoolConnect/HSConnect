@@ -122,12 +122,11 @@ button {
   background-color: #01874d;
 }
 
-.dropdown-item {
-}
-
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
+@media (min-width: 300px) {
+  header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
 }
 
 @media (min-width: 300px) {
