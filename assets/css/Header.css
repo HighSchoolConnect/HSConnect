@@ -82,7 +82,14 @@ body {
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 300px) {
+  header.masthead .intro-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 600px) {
   header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -123,13 +130,6 @@ button {
 }
 
 @media (min-width: 300px) {
-  header.masthead .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px;
-  }
-}
-
-@media (min-width: 300px) {
   .searchbar {
     width: 310px;
   }
@@ -153,5 +153,30 @@ button {
     width: 450px;
     font-size: 16px;
   }
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
