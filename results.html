@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/Growing-Search-Bar-Animated-Text-Input.css">
     <link rel="stylesheet" href="assets/css/Header.css">
     <link rel="stylesheet" href="assets/css/Navbar.css">
+    <link rel="stylesheet" href="assets/css/Results.css">
 </head>
 
 <body>
@@ -32,25 +33,44 @@
     </nav>
     <header class="masthead" style="background: url(&quot;assets/img/Background.jpg&quot;) center / cover no-repeat;filter: blur(0px);">
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"></div>
-                <div class="intro-heading text-uppercase"></div>
-                <h1 style="/*font-size: 93.88px;*/">HS CONNECT</h1>
-                <p style="/*font-size: 26px;*/">Find Internships, Jobs, and Volunteering&nbsp;&nbsp;</p>
-                <div class="d-flex justify-content-center h-100">
-                    <div class="searchbar" style="background: rgb(0,0,0);"><input type="text" class="search_input" placeholder="EX: Software Engineer, Medical Assistant"><a class="search_icon" href="#" style="color: rgb(0,0,0);background: black;"><i class="fas fa-search" style="color: #1cc97e;"></i></a></div>
-                </div>
-                <div>
-                    <div class="row" style="padding: 20px;">
-                        <div class="col-xl-3 offset-xl-3">
-                            <p style="font-size: 27px;">Search Type</p>
-                            <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="box-shadow: 0px 0px;">Internship </button>
-                                <div class="dropdown-menu" style="box-shadow: 0px 0px;"><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Internship</a><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Job</a><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Volunteering</a></div>
+            <div class="row" style="padding-top: 109px;">
+                <div class="col-md-6 col-xl-1 offset-xl-0" style="padding-right: 45px;padding-bottom: 28px;padding-left: 61px;padding-top: 31px;height: 629px;width: 591px;">
+                    <div style="height: 553px;background: #000000;border-radius: 48px;">
+                        <div class="row" style="padding: 36px;height: 451px;">
+                            <div class="col-xl-5" id="Filters-Collumn" style="background: #000000;border-color: var(--bs-gray-900);">
+                                <p style="font-size: 30px;">Type</p>
+                                <p style="font-size: 30px;margin-top: 35px;">Location</p>
+                                <p style="font-size: 26px;margin-top: 25px;">Search Radius</p>
+                                <p style="font-size: 30px;margin-top: 22px;">Experience Level</p>
+                                <p style="font-size: 30px;margin-top: 33px;">Salary Range</p>
+                            </div>
+                            <div class="col" style="height: 510px;width: 121.5px;background: #000000;border-radius: 50px;">
+                                <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="box-shadow: 0px 0px;width: 175.302px;font-size: 20px;">Internship </button>
+                                    <div class="dropdown-menu" style="box-shadow: 0px 0px;"><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Internship</a><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Job</a><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Volunteering</a></div>
+                                </div><input type="text" style="height: 49px;margin-top: 35px;text-align: center;background: rgb(28,201,126);color: rgb(255,255,255);border-radius: 10px;border-width: 0px;" placeholder="City or ZIP">
+                                <div class="form-check" style="padding-top: 13px;"><input class="form-check-input" type="radio" id="Search-1" name="SearchRadio"><label class="form-check-label" for="formCheck-1" style="font-size: 21px;">0-10 Miles</label></div>
+                                <div class="form-check" style="padding-top: 1px;"><input class="form-check-input" type="radio" id="Search-1" name="SearchRadio" style="padding-top: 1px;"><label class="form-check-label" for="formCheck-1" style="padding-top: 1px;font-size: 21px;">10-25 Miles</label></div>
+                                <div class="form-check" style="padding-top: 1px;"><input class="form-check-input" type="radio" id="Search-1" name="SearchRadio"><label class="form-check-label" for="formCheck-1" style="font-size: 21px;">25+ Miles</label></div>
+                                <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="box-shadow: 0px 0px;width: 175.302px;font-size: 20px;margin-top: 30px;">Internship </button>
+                                    <div class="dropdown-menu" style="box-shadow: 0px 0px;"><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Internship</a><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Job</a><a class="dropdown-item" href="#" style="box-shadow: 0px 0px;color: #1cc97e;">Volunteering</a></div>
+                                </div>
+                                <p style="margin-top: 74px;font-size: 20px;">Min&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Max</p>
+                                <div class="input-group" style="margin-top: -14px;"><input class="form-control" type="text" id="SalaryMin" style="margin-right: 9px;border-radius: 10px;background: rgb(28,200,126);color: rgb(255,255,255);text-align: center;width: 96.958px;font-size: 15px;" placeholder="Ex: 10000"><input class="form-control" type="text" style="border-radius: 10px;background: rgb(28,201,126);color: rgb(255,255,255);text-align: center;width: 96.958px;font-size: 15px;" placeholder="Ex: 200000"></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
-                            <p style="font-size: 27px;">Location</p><input type="text" style="background: #1cc97e;width: 124px;height: 36px;border-style: solid;border-color: #1cc97e;text-align: center;" placeholder="ZIP Code">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="intro-text">
+                        <div class="d-flex justify-content-center h-100" id="resSearchBar">
+                            <div class="searchbar" style="background: rgb(0,0,0);"><input type="text" id="resTextInput" class="search_input" placeholder="EX: Software Engineer, Medical Assistant" style="color: rgb(28,201,126);filter: blur(0px);opacity: 1;border-color: rgb(255,255,255);"><a class="search_icon" href="#" style="color: rgb(0,0,0);background: black;"><i class="fas fa-search" style="color: #1cc97e;"></i></a></div>
                         </div>
+                        <div class="intro-lead-in"></div>
+                        <div class="intro-heading text-uppercase"></div>
+                        <h1 style="/*font-size: 93.88px;*/"></h1>
+                        <p style="/*font-size: 26px;*/"></p>
+                        <h1></h1>
+                        <div></div>
                     </div>
                 </div>
             </div>
@@ -77,6 +97,7 @@
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Results.js"></script>
 </body>
 
 </html>
