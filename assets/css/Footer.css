@@ -25,3 +25,18 @@ ul.social-buttons li a {
   background-color: #212529;
 }
 
+#col1 {
+  padding-right: 45px;
+  padding-bottom: 28px;
+  padding-left: 61px;
+  padding-top: 31px;
+  height: 629px;
+  width: 591px;
+}
+
+#div1 {
+  height: 553px;
+  background: #000000;
+  border-radius: 48px;
+}
+
